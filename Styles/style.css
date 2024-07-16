@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+/* shared  */
+.primary-color{
+    color: rgb(58, 58, 58);
+}
+  
+header{
+    max-width: 1190px;
+    margin: 0 auto;
+    margin-bottom: 69px;
+}  
+
+/* Navbar 
+-------------------------------------------------------- */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav>h3{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li img{
+    width: 24px;
+}
+.nav-items{
+    margin-bottom: 50px;
+}
+.nav-item a{
+  font-weight: 600;
+}
+
+
+/* header contant
+-------------------------------------------------------- */
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content-right{
+    background-image: url('../images/Circle\ design.svg');
+    /* background-position: right;
+    background-repeat: no-repeat; */
+}
+.header-content-left{
+    margin-right: 133px;
+}
+.header-title{
+    font-weight: 700;
+    font-size: 3.2rem;
+    margin-bottom: 16px;
+}
+.header-description{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.header-btn{
+    background-color: rgb(224, 44, 109);
+    color: rgb(255, 255, 255);
+    padding: 10px 15px 10px 24px;
+    border: none;
+    border-radius: 41px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+/* .header-btn img{
+    width: 16px;
+    color: aliceblue;
+} */
+
+/* main section 
+-------------------------------------------------------- */
+/* sponsors section */
+
+.sponsors-section{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.sponsors{
+    max-width: 986px;
+    display: flex;
+    justify-content:space-between;
+    margin: 0 auto;
+    margin-top: 105px;
+    margin-bottom: 130px;
+}
+/* popular collection section */
+.popular-collection-section{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.popular-collection-title{
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.popular-collection-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card{
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+}
+.card img{
+    width: 300px;
+    height: 256px;
+    margin: 0 auto;
+    margin-top: 17px;
+    margin-bottom: 0px;
+}
+.card h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-left: 25px;
+    margin-bottom: 0px;
+}
+.card-price{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.87);
+    margin-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.card-ratings{
+    font-size: .8rem;
+    font-weight: 700;
+    color: rgb(94, 99, 102);
+    margin-left: 25px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+.card-description{
+    font-size: .8rem;
+    font-weight: 700;
+    color: rgb(120, 120, 133);
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+
+@media screen and (max-width:576px) {
+
+    .header-content{
+        flex-direction: column-reverse;
+        margin: 0 auto;
+    }
+    .nav-items{
+        flex-direction: column;
+    }
+    .header-content-left{
+        /* margin: 0 auto; */
+        /* justify-content: center;
+        align-items: center;
+        margin: 0 auto; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .header-title{
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    .header-description{
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 0px;
+    }
+    .Incluence-gear-title{
+        text-align: center;
+    }
+}
