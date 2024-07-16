@@ -212,6 +212,12 @@ nav ul li img{
     justify-content: space-between;
     gap: 96px;
     align-items: center;
+    /* justify-content: center; */
+}
+.featured-content {
+    /* display: flex;
+    flex-direction: column; */
+    justify-content: center;
 }
 @media screen and (max-width:576px) {
     .header-content{
